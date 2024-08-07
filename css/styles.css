@@ -1,0 +1,198 @@
+:root {
+  /* Fonts */
+  --main-font: "Montserrat", sans-serif;
+
+  /* Colors */
+  --main-cl: #111111;
+  --main-cl-60: rgba(17, 17, 17, 0.6);
+  --accent-cl: #fd9222;
+  --violet-cl: #1e1823;
+  --beige-cl: #fcf1e0;
+  --white-cl: #fafafa;
+  --gray-cl: #4c4c4c;
+  --white-cl-2: #ffffff;
+  --white-cl-60: rgba(255, 255, 255, 0.7);
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--white-cl);
+  color: var(--main-cl);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ---COMPONENT STYLES--- */
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.title-accent {
+  color: var(--accent-cl);
+}
+
+/* ---HEADER--- */
+
+.header-logo {
+  font-weight: 700;
+  font-size: 1.11;
+  letter-spacing: -0.03em;
+}
+
+.header-logo-italic {
+  font-style: italic;
+}
+
+.header-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--accent-cl);
+}
+/* 
+.header-menu-link:is(:hover, :focus) {
+  color: #fd9222;
+} */
+
+/* ---HERO--- */
+.hero {
+  background: var(--main-cl-60);
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: var(--white-cl-2);
+}
+.hero-btn {
+  background: var(--accent-cl);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--white-cl-2);
+}
+.hero-link-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--white-cl-2);
+}
+.hero-down-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: var(--white-cl-2);
+}
+
+/* ---ADVANTAGES--- */
+
+.advantages {
+  background: var(--violet-cl);
+}
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--white-cl-2);
+}
+.advantages-item-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--white-cl-2);
+}
+
+/* ---INGREDIENTS--- */
+
+.ingredients {
+}
+.ingredients-title {
+}
+.ingredients-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.ingredients-list {
+}
+.ingredients-list-item {
+}
+.ingredients-list-img {
+}
+.ingredients-captions {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  /* color: #ffffff; */
+}
+
+/* ---MADE--- */
+
+.made {
+}
+.made-title {
+}
+
+.made-img {
+}
+
+.made-right-side {
+  background-color: var(--white-2-cl);
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.made-list {
+}
+.made-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}

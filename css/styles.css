@@ -5,6 +5,7 @@
   /* Colors */
   --main-cl: #111111;
   --main-cl-60: rgba(17, 17, 17, 0.6);
+  --main-cl-70: rgba(17, 17, 17, 0.7);
   --accent-cl: #fd9222;
   --violet-cl: #1e1823;
   --beige-cl: #fcf1e0;
@@ -25,8 +26,22 @@ a {
   color: currentColor;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .visually-hidden {
@@ -45,6 +60,14 @@ ul {
 
 /* ---COMPONENT STYLES--- */
 
+.container {
+  width: 100%;
+  max-width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .title {
   font-weight: 600;
   font-size: 24px;
@@ -59,6 +82,11 @@ ul {
 }
 
 /* ---HEADER--- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
 
 .header-logo {
   font-weight: 700;
@@ -81,6 +109,7 @@ ul {
 .header-menu-link:focus {
   color: var(--accent-cl);
 }
+
 /* 
 .header-menu-link:is(:hover, :focus) {
   color: #fd9222;
@@ -88,7 +117,13 @@ ul {
 
 /* ---HERO--- */
 .hero {
+  padding-bottom: 80px;
+}
+
+.hero-wrap {
   background: var(--main-cl-60);
+  border-radius: 30px;
+  padding: 381px 40px 40px 40px;
 }
 
 .hero-title {
@@ -97,7 +132,10 @@ ul {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: var(--white-cl-2);
+  max-width: 484px;
+  margin-bottom: 32px;
 }
+
 .hero-btn {
   background: var(--accent-cl);
   font-family: inherit;
@@ -106,12 +144,14 @@ ul {
   line-height: 1.21;
   color: var(--white-cl-2);
 }
+
 .hero-link-btn {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   color: var(--white-cl-2);
 }
+
 .hero-down-btn {
   font-weight: 500;
   font-size: 14px;
@@ -124,17 +164,24 @@ ul {
 
 .advantages {
   background: var(--violet-cl);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
 .advantages-list {
+  padding: 0 18px;
 }
-.advantages-item {
-}
+
+.advantages-item {}
+
 .advantages-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
   color: var(--white-cl-2);
+  margin-bottom: 18px;
 }
+
 .advantages-item-text {
   font-size: 14px;
   line-height: 1.29;
@@ -145,9 +192,15 @@ ul {
 /* ---INGREDIENTS--- */
 
 .ingredients {
+  padding-top: 120px;
 }
+
 .ingredients-title {
+  max-width: 412px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
+
 .ingredients-desc {
   font-weight: 400;
   font-size: 14px;
@@ -155,12 +208,24 @@ ul {
   text-align: center;
   letter-spacing: -0.02em;
 }
-.ingredients-list {
+
+.ingredients-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main-cl);
+  max-width: 486px;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
-.ingredients-list-item {
-}
-.ingredients-list-img {
-}
+
+.ingredients-list {}
+
+.ingredients-list-item {}
+
+.ingredients-list-img {}
+
 .ingredients-captions {
   font-weight: 600;
   font-size: 14px;
@@ -173,12 +238,14 @@ ul {
 /* ---MADE--- */
 
 .made {
-}
-.made-title {
+  padding-top: 120px;
 }
 
-.made-img {
+.made-title {
+  margin-bottom: 50px;
 }
+
+.made-img {}
 
 .made-right-side {
   background-color: var(--white-2-cl);
@@ -188,11 +255,213 @@ ul {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  margin-bottom: 28px;
+  display: inline-block;
 }
-.made-list {
+
+.made-list {}
+
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
 }
+
 .made-text {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
+
+/* ---PRODUCTS STYLE--- */
+
+.products {
+  padding-top: 120px;
+}
+
+.container {}
+
+.product-title {
+  margin-bottom: 50px;
+}
+
+.products-list {}
+
+.products-item {
+  background-color: var(--white-cl);
+  padding: 32px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background-color: var(--white-cl-2);
+}
+
+.products-pic {}
+
+.products-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.products-desc {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+
+  color: var(--main-cl-70);
+}
+
+.products-cost {}
+
+/* ---BESTSELLERS STYLE--- */
+
+.bestsellers {
+  padding-top: 120px;
+}
+
+
+.bestsellers-title {
+  margin-bottom: 50px;
+}
+
+.bestsellers-list {}
+
+.bestsellers-item {
+  background-color: var(--white-cl-2);
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(17, 17, 17, 0.1);
+  border-radius: 0px 0px 15px 15px;
+  padding-bottom: 28px;
+
+}
+
+.bestsellers-picture {
+  margin-bottom: 28px;
+}
+
+.bestsellers-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ---REVIEWS STYLES--- */
+
+.reviews {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.reviews-title {
+  margin-bottom: 90px;
+}
+
+.reviews-list {
+  margin-bottom: 50px;
+}
+
+.reviews-item {
+  background: var(--white-cl-2);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 100px rgba(17, 17, 17, 0.03);
+  border-radius: 15px;
+}
+
+.reviews-avatar {}
+
+.reviews-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.reviews-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: var(--main-cl-70);
+}
+
+.reviews-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ---FOOTER STYLES--- */
+
+.footer {
+  background-color: var(--violet-cl);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-top {}
+
+.footer-heading {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--white-cl-2);
+  max-width: 300px;
+}
+
+.footer-socials {}
+
+.footer-contancts {}
+
+.socials-caption {
+  margin-bottom: 14px;
+}
+
+.contacts {}
+
+.contacts-caption {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  margin-bottom: 14px;
+
+  color: var(--white-cl-2);
+}
+
+.contacts-data {
+  font-style: normal;
+}
+
+.contacts-list {}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.contacts-link {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--white-cl-2);
+}
+
+.footer-bottom {}
+
+.footer-navigation {}
+
+.navigation {}
+
+.navigation-menu {}
+
+.navigation-item {}
+
+.navigation-link {}
+
+.light {}

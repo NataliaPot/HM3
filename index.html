@@ -20,52 +20,63 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="header-navigation">
-          <a class="header-logo" href=""
-            ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE
-            <img src="./images/chocolate-icon.svg" alt="site logo"
-          /></a>
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Home</a>
+    <header class="header" id="home">
+      <div class="container header-container">
+        <nav class="header-navigation navigation">
+          <a class="header-logo link" href="">
+            <span class="header-logo-italic">SIMPLY</span> CHOCOLATE
+            <img
+              src="./images/chocolate-icon.svg"
+              class="logo-icon"
+              alt="site logo"
+            />
+          </a>
+          <ul class="navigation-menu list">
+            <li class="navigation-item">
+              <a class="navigation-link dark link" href="#home">Home</a>
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">How it’s made?</a>
+            <li class="navigation-item">
+              <a class="navigation-link dark link" href="#made"
+                >How it’s made?</a
+              >
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="">Chocolate is loved</a>
+            <li class="navigation-item">
+              <a class="navigation-link dark link" href="#reviews"
+                >Chocolate is loved</a
+              >
             </li>
           </ul>
         </nav>
-        <ul class="header-soc-list">
-          <li class="header-soc-item">
+        <ul class="header-socials socials-list list">
+          <li class="socials-item">
             <a
-              class="header-soc-link"
+              class="socials-link link"
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              >insta</a
             >
+              insta
+            </a>
           </li>
-          <li class="header-soc-item">
+          <li class="socials-item">
             <a
-              class="header-soc-link"
+              class="socials-link link"
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              >fb</a
             >
+              fb
+            </a>
           </li>
-          <li class="header-soc-item">
+          <li class="socials-item">
             <a
-              class="header-soc-link"
+              class="socials-link link"
               href=""
               target="_blank"
               rel="noopener noreferrer"
-              >twit</a
             >
+              twit
+            </a>
           </li>
         </ul>
       </div>
@@ -78,9 +89,13 @@
               Treat yourself or a loved one to <br />
               our finest ingredients for a moment of pure delight!
             </h1>
-            <button type="button" class="hero-btn">Buy now</button>
-            <a href="#made" class="hero-link-btn">How it’s made</a>
-            <a href="#footer" class="hero-down-btn">scroll down</a>
+            <div class="hero-buttons">
+              <button type="button" class="hero-btn btn">Buy now</button>
+              <a href="#made" class="hero-link-btn">How it’s made</a>
+              <a href="#footer" class="hero-down-btn"
+                >scroll down <span class="hero-down-icon"></span
+              ></a>
+            </div>
           </div>
         </div>
       </section>
@@ -213,49 +228,54 @@
           <h2 class="made-title title">
             hOW IT’S <span class="title-accent">made</span>?
           </h2>
-          <img
-            class="made-img"
-            src="./images/image.jpg"
-            alt="liquid chocolate"
-            width="600"
-            height="400"
-          />
-          <div class="made-right-side">
-            <b class="made-subtitle">
-              Try our chocolates today and discover the perfect balance of
-              flavor
-            </b>
-            <ul class="made-list">
-              <li class="made-item">
-                <p class="made-text">
-                  Heat the milk in a saucepan without bringing it to a boil. Add
-                  sugar and cocoa powder.
-                </p>
-              </li>
-              <li class="made-item">
-                <p class="made-text">
-                  At the same time, prepare a water bath. Melt the butter on it.
-                </p>
-              </li>
-              <li class="made-item">
-                <p class="made-text">
-                  "Mix" the milk mixture and already liquid butter. Mix
-                  thoroughly with a silicone spatula so that the mass becomes
-                  uniform and silky.
-                </p>
-              </li>
-              <li class="made-item">
-                <p class="made-text">
-                  Heat the mixture over low heat, letting it barely boil.
-                </p>
-              </li>
-              <li class="made-item">
-                <p class="made-text">
-                  Pour the chocolate into special containers (can be replaced
-                  with ice molds). Allow to cool and harden.
-                </p>
-              </li>
-            </ul>
+          <div class="made-wrap">
+            <div class="made-left-side">
+              <img
+                class="made-img"
+                src="./images/image.jpg"
+                alt="liquid chocolate"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="made-right-side">
+              <b class="made-subtitle">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </b>
+              <ul class="made-list">
+                <li class="made-item">
+                  <p class="made-text">
+                    Heat the milk in a saucepan without bringing it to a boil.
+                    Add sugar and cocoa powder.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">
+                    At the same time, prepare a water bath. Melt the butter on
+                    it.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">
+                    "Mix" the milk mixture and already liquid butter. Mix
+                    thoroughly with a silicone spatula so that the mass becomes
+                    uniform and silky.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">
+                    Heat the mixture over low heat, letting it barely boil.
+                  </p>
+                </li>
+                <li class="made-item">
+                  <p class="made-text">
+                    Pour the chocolate into special containers (can be replaced
+                    with ice molds). Allow to cool and harden.
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

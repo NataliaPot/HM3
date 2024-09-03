@@ -30,7 +30,7 @@
               class="logo-icon"
               alt="site logo"
             /> -->
-            <svg class="social-icon" width="24" height="24">
+            <svg class="logo-icon" width="24" height="24">
               <use href="./images/icon.svg#icon-chocolate"></use>
             </svg>
           </a>
@@ -551,13 +551,40 @@
             <p class="socials-caption">Social networks</p>
             <ul class="socials-list list">
               <li class="socials-item">
-                <a class="socials-link link" href="">insta</a>
+                <a
+                  class="socials-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icon light" width="24" height="24">
+                    <use href="./images/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="socials-item">
-                <a class="socials-link link" href="">fb</a>
+                <a
+                  class="socials-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icon light" width="24" height="24">
+                    <use href="./images/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="socials-item">
-                <a class="socials-link link" href="">twit</a>
+                <a
+                  class="socials-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social-icon light" width="24" height="24">
+                    <use href="./images/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -599,6 +626,17 @@
               </li>
             </ul>
           </nav>
+          <form class="footer-form">
+            <label aria-label="footer email input" class="footer-input-label">
+              <input
+                type="email"
+                name="footer-mail"
+                class="footer-input"
+                placeholder="Enter your email"
+              />
+            </label>
+            <button type="submit" class="footer-btn btn">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
@@ -665,7 +703,30 @@
 
           <div class="modal-field">
             <label for="user-text" class="modal-label">Comment</label>
-            <textarea name="user-text" id="user-text" class="modal-comment" placeholder="Enter text"></textarea>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-comment"
+              placeholder="Enter text"
+            ></textarea>
+
+            <div class="modal-field">
+              <input
+                class="modal-check visually-hidden"
+                type="checkbox"
+                name="polisy"
+                id="polisy"
+                value="true"
+              />
+              <label class="modal-check-text" for="polisy">
+                <span>
+                  <svg class="check-icon" width="10" height="10">
+                    <use href="./images/icon.svg#icon-check"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="" class="modal-check-link"> Privacy Policy</a></label
+              >
             </div>
             <button type="submit" class="modal-form-btn">Send</button>
           </div>

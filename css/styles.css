@@ -51,6 +51,9 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -79,8 +82,8 @@ img {
 
 .title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -312,45 +315,26 @@ img {
 
 .advantages {
   background: var(--violet-cl);
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .advantages-list {
-  padding: 0 18px;
+  /* padding: 0 18px; */
+  padding-right: 28px;
   display: flex;
-  gap: 88px;
+  flex-wrap: wrap;
+  gap: 38px;
 }
 
 .advantages-item {
-  width: calc((100% - 2 * 88px / 3));
+  /* width: calc((100% - 2 * 88px / 3)); */
   position: relative;
 }
 
-.advantages-item::after {
-  content: '';
-  height: 124px;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  right: -44px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.advantages-item:last-child::after {
-  display: none;
-}
 
 .advantages-item-top {
-  width: 62px;
-  height: 62px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 22px;
+  display: none;
 }
 
 .advantages-subtitle {
@@ -371,13 +355,13 @@ img {
 /* ---INGREDIENTS--- */
 
 .ingredients {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .ingredients-title {
   max-width: 412px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .ingredients-desc {
@@ -402,18 +386,34 @@ img {
 .ingredients-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 32px;
+  gap: 20px;
 }
 
 .ingredients-list-item {
   background: var(--white-cl-2);
   border: 1px solid #FD9222;
   border-radius: 15px;
-  width: calc((100% - 3 * 32px) / 4);
+  /* width: calc((100% - 3 * 32px) / 4); */
   padding: 28px 23px;
+  width: 100%;
+}
+
+.ingredients-list-item:nth-child(4n + 1) {
+  background-color: var(--accent-cl);
+  color: var(--white-cl-2);
+}
+
+.ingredients-list-item:nth-child(4n + 3) {
+  background-color: #1E1823;
+  color: var(--white-cl-2);
+}
+
+.ingredients-list-item:not(:nth-child(-n + 4)) {
+  display: none;
 }
 
 .ingredients-list-img {
+  margin: 0 auto;
   margin-bottom: 36px;
 }
 
@@ -429,7 +429,7 @@ img {
 /* ---MADE--- */
 
 .made {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .made-title {
@@ -438,6 +438,7 @@ img {
 
 .made-wrap {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -446,15 +447,15 @@ img {
 .made-img {}
 
 .made-right-side {
-  background-color: var(--white-cl);
-  padding: 32px;
+  background-color: var(--white-cl-2);
+  padding: 20px 14px;
 }
 
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 
@@ -479,7 +480,7 @@ img {
 }
 
 .made-item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .made-text {
@@ -491,7 +492,7 @@ img {
 /* ---PRODUCTS STYLE--- */
 
 .products {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .container {}
@@ -503,11 +504,12 @@ img {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 18px;
+  gap: 32px;
 }
 
 .products-item {
-  width: calc((100% - 54px) / 4);
+  /* width: calc((100% - 54px) / 4); */
+  width: 100%;
   background-color: var(--white-cl);
   padding: 32px 20px;
   border-radius: 15px;
@@ -550,7 +552,7 @@ img {
 /* ---BESTSELLERS STYLE--- */
 
 .bestsellers {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 
@@ -560,11 +562,13 @@ img {
 
 .bestsellers-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
 .bestsellers-item {
-  width: calc((100% - 32px) / 3);
+  /* width: calc((100% - 32px) / 3); */
+  width: 100%;
   background-color: var(--white-cl);
   border-radius: 15px;
   border-right: 1px solid rgba(17, 17, 17, 0.1);
@@ -573,6 +577,10 @@ img {
   padding-bottom: 28px;
   position: relative;
 
+}
+
+.bestsellers-item:not(:first-child) {
+  display: none;
 }
 
 .bestsellers-item:hover .bestsellers-cover {
